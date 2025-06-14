@@ -207,9 +207,13 @@ button.black_btn {
   </div>
 
   <div class="banner_image_text title-wrapper--self-padded-mobile">
+    {% if section.settings.sh_overlay_button_label != blank %}
+          <a href="{{ section.settings.sh_overlay_button_link | default: '#' }}"></a>
       <button class="black_btn_mobile">
-            SHOP NOW  →
+         {{ section.settings.sh_overlay_button_label }}
            </button>
+            </a>
+           {% endif %}
      <div class="overlay_content">
       <h1>{{ section.settings.sh_overlay_heading }}</h1>
       <p>{{ section.settings.sh_overlay_text }}</p>
