@@ -590,6 +590,6 @@
   }
 
   .grid__item:nth-child(8n) .product-card-wrapper:hover .shape--blob {
-    clip-path: polygon(var(--shape--blob-5));
+    clip-path: polygon(var(--shape--blob-5)) !important;
   }
 }
