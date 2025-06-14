@@ -92,6 +92,9 @@ gap: 50px;
     bottom: 8%;
     left: 4%;
 }
+.sh_hamburger_menu{
+    display: none;
+}
 .black_btn_mobile{
     display: none;
 }
@@ -101,6 +104,9 @@ gap: 50px;
 }
 }
 @media(max-width:768px){
+    .sh_hamburger_menu{
+        display: block;
+    }
     p.gift {
   display: none;
 }
@@ -181,7 +187,7 @@ button.black_btn {
   <div class="sh_header">
     <div class="page-width page-width-desktop">
       <div class="sh_topbar">
-            <div class="hamburger_menu">
+            <div class="sh_hamburger_menu">
                 <img src="assets/images/Group 1000008115.png" width="18" height="10" >
             </div>
         <h1 class="sh_logo">{{ section.settings.sh_logo_text }}</h1>
