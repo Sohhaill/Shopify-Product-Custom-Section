@@ -119,10 +119,7 @@ gap: 50px;
   </div>
 
   <div class="banner_image_text">
-    {% if section.settings.sh_banner_image %}
-      <img src="{{ section.settings.sh_banner_image | image_url: width: 1200 }}" alt="Banner Image">
-    {% endif %}
-    <div class="overlay_content">
+     <div class="overlay_content">
       <h1>{{ section.settings.sh_overlay_heading }}</h1>
       <p>{{ section.settings.sh_overlay_text }}</p>
       {% if section.settings.sh_overlay_button_label != blank %}
@@ -133,6 +130,10 @@ gap: 50px;
         </a>
       {% endif %}
     </div>
+    {% if section.settings.sh_banner_image %}
+      <img src="{{ section.settings.sh_banner_image | image_url: width: 1200 }}" alt="Banner Image">
+    {% endif %}
+   
   </div>
 </section>
 
