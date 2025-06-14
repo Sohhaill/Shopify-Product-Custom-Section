@@ -1,0 +1,203 @@
+
+<style>
+
+.page-width-desktop {
+    max-width: 1200px;
+    padding: 0 5rem;
+    margin: auto;
+}
+.banner_section{
+      font-family: "Jost" !important;
+       height: 100vh !important;
+}
+.header{
+    background-color: #F5F5F5;
+   
+}
+.banner_section h1.logo {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.banner_section .topbar {
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+     padding-bottom: 10px;
+
+}
+p.gift{
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+}
+button.yellow_btn {
+    background: #FFF544;
+    border: unset;
+    width: 207px;
+    font-size: 16px;
+    height: 44px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+button.black_btn {
+    background: black;
+    border: unset;
+    width: 207px;
+    color: white;
+    font-size: 16px;
+    height: 44px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+button.yellow_btn:hover{
+    background: black;
+    color: white;
+}
+button.black_btn:hover{
+    background: #FFF544;
+    color: black;
+}
+.banner_image_text img {
+    width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.banner_image_text {
+    position: relative;
+    height: 780px;
+   
+}
+.overlay_content h1 {
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 100%;
+  
+}
+.overlay_content p {
+    font-size: 20px;
+    font-weight: 400;
+}
+.overlay_content {
+    display: flex
+;
+gap: 50px;
+    flex-direction: column;
+    width: 483px;
+    position: absolute;
+    bottom: 8%;
+    left: 4%;
+}
+</style>
+
+
+
+<section class="banner_section">
+  <div class="header">
+    <div class="page-width page-width-desktop">
+      <div class="topbar">
+        <h1 class="logo">{{ section.settings.sh_logo_text }}</h1>
+        <p class="gift">{{ section.settings.sh_top_text }}</p>
+        {% if section.settings.sh_top_button_label != blank %}
+          <a href="{{ section.settings.sh_top_button_link | default: '#' }}">
+            <button class="yellow_btn">
+              {{ section.settings.sh_top_button_label }}
+            </button>
+          </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <div class="banner_image_text">
+    {% if section.settings.sh_banner_image %}
+      <img src="{{ section.settings.sh_banner_image | image_url: width: 1200 }}" alt="Banner Image">
+    {% endif %}
+    <div class="overlay_content">
+      <h1>{{ section.settings.sh_overlay_heading }}</h1>
+      <p>{{ section.settings.sh_overlay_text }}</p>
+      {% if section.settings.sh_overlay_button_label != blank %}
+        <a href="{{ section.settings.sh_overlay_button_link | default: '#' }}">
+          <button class="black_btn">
+            {{ section.settings.sh_overlay_button_label }}
+          </button>
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Sohail Banner Section",
+  "tag": "section",
+  "class": "banner_section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "sh_logo_text",
+      "label": "Logo Text",
+      "default": "Tisso Vision"
+    },
+    {
+      "type": "text",
+      "id": "sh_top_text",
+      "label": "Top Gift Text",
+      "default": "Find the ideal gift for your loved ones."
+    },
+    {
+      "type": "text",
+      "id": "sh_top_button_label",
+      "label": "Top Button Label",
+      "default": "Choose gift →"
+    },
+    {
+      "type": "url",
+      "id": "sh_top_button_link",
+      "label": "Top Button Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "sh_banner_image",
+      "label": "Banner Image"
+    },
+    {
+      "type": "text",
+      "id": "sh_overlay_heading",
+      "label": "Overlay Heading",
+      "default": "The Gift Guide"
+    },
+    {
+      "type": "textarea",
+      "id": "sh_overlay_text",
+      "label": "Overlay Description",
+      "default": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season."
+    },
+    {
+      "type": "text",
+      "id": "sh_overlay_button_label",
+      "label": "Overlay Button Label",
+      "default": "SHOP NOW →"
+    },
+    {
+      "type": "url",
+      "id": "sh_overlay_button_link",
+      "label": "Overlay Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hiring Banner Section",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
