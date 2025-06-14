@@ -63,10 +63,52 @@
         "sh_overlay_button_label": "SHOP NOW →",
         "sh_overlay_button_link": ""
       }
+    },
+    "collection_list_wUkCjb": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_9Y3bDx": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_Qy7nVW": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "featured_collection_zV9a39": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_9Y3bDx",
+        "featured_collection_Qy7nVW",
+        "featured_collection_zV9a39"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner",
-    "sohail_banner_section_G3izpy"
+    "sohail_banner_section_G3izpy",
+    "collection_list_wUkCjb"
   ]
 }
