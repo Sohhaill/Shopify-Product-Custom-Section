@@ -97,6 +97,78 @@ gap: 50px;
     padding: 0px 16px;
 }
 }
+@media(max-width:768px){
+    p.gift {
+  display: none;
+}
+button.yellow_btn {
+  display: none;
+}
+   .banner_section .topbar {
+        display: flex
+;
+        justify-content: start;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 58%;
+    }
+    .banner_section h1.logo {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: auto;
+}
+    .overlay_content {
+        position: static;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: unset;
+    }
+    .overlay_content h1 {
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 49px;
+        line-height: 100%;
+        margin-bottom: 24px;
+    }
+    .overlay_content p {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+
+button.black_btn {
+    display: none;
+}
+    .black_btn_mobile {
+        background: black;
+        border: unset;
+        width: 193px;
+        color: white;
+        font-size: 16px;
+        height: 45px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 400;
+        transition: all 0.3s ease-in-out;
+        bottom: 1%;
+        position: absolute;
+    }
+    .banner_image_text {
+    position: relative;
+    height: unset !important;
+}
+.banner_image_text{
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+}
 </style>
 
 
@@ -105,6 +177,9 @@ gap: 50px;
   <div class="sh_header">
     <div class="page-width page-width-desktop">
       <div class="sh_topbar">
+            <div class="hamburger_menu">
+                <img src="assets/images/Group 1000008115.png" width="18" height="10" >
+            </div>
         <h1 class="sh_logo">{{ section.settings.sh_logo_text }}</h1>
         <p class="sh_gift">{{ section.settings.sh_top_text }}</p>
         {% if section.settings.sh_top_button_label != blank %}
@@ -119,6 +194,9 @@ gap: 50px;
   </div>
 
   <div class="banner_image_text">
+      <button class="black_btn_mobile">
+            SHOP NOW  →
+           </button>
      <div class="overlay_content">
       <h1>{{ section.settings.sh_overlay_heading }}</h1>
       <p>{{ section.settings.sh_overlay_text }}</p>
