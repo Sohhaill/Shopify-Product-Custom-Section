@@ -1,0 +1,222 @@
+
+.sh_banner_section{
+      font-family: "Jost" !important;
+}
+.sh_header{
+    background-color: #F5F5F5;
+   
+}
+.sh_banner_section h1.sh_logo {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: unset !important;
+    font-family: "Jost" !important;
+}
+
+.sh_banner_section .sh_topbar {
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+     padding-bottom: 10px;
+
+}
+p.sh_gift{
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+    font-family: "Jost" !important;
+    margin: unset;
+}
+button.yellow_btn {
+    background: #FFF544;
+    border: unset;
+    width: 207px;
+    font-size: 16px;
+    height: 44px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+    font-family: "Jost" !important;
+}
+.sh_banner_section button.black_btn {
+    background: black;
+    border: unset;
+    width: 207px;
+    color: white;
+    font-size: 16px;
+    height: 44px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+    font-family: "Jost" !important;
+}
+button.yellow_btn:hover{
+    background: black;
+    color: white;
+}
+.sh_banner_section button.black_btn:hover{
+    background: #FFF544;
+    color: black;
+}
+.banner_image_text img {
+    width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.banner_image_text {
+    position: relative;
+    height: 780px;
+   
+}
+.overlay_content h1 {
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 100%;
+    font-family: "Jost" !important;
+    margin: unset;
+}
+.overlay_content p {
+    font-size: 20px;
+    font-weight: 400;
+    margin: unset;
+    font-family: "Jost" !important;
+    line-height: 140%;
+}
+.overlay_content {
+    display: flex
+;
+gap: 50px;
+    flex-direction: column;
+    width: 483px;
+    position: absolute;
+    bottom: 8%;
+    left: 4%;
+}
+
+.sh_hamburger_menu{
+    display: none;
+}
+.sh_banner_section .black_btn_mobile{
+    display: none;
+}
+
+/* mobiles media query */
+
+@media(max-width:990px){
+    .sh_header .page-width.page-width-desktop {
+    padding: 0px 16px;
+}
+}
+@media(max-width:768px){
+  .sh_bootom_bar p {
+    font-size: 12px !important;
+   
+}
+    .sh_hamburger_menu{
+        display: block;
+    }
+  p.sh_gift{
+    display: none;
+  }
+
+button.yellow_btn {
+  display: none;
+}
+   .banner_section .topbar {
+        display: flex
+;
+        justify-content: start;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 58%;
+    }
+    .banner_section h1.logo {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: auto;
+}
+    .overlay_content {
+        position: static;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: unset;
+    }
+    .overlay_content h1 {
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 49px;
+        line-height: 100%;
+        margin-bottom: 24px;
+        font-family: "Jost" !important;
+    }
+    .overlay_content p {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 12px;
+        text-align: center;
+        font-family: "Jost" !important;
+    }
+
+.sh_banner_section button.black_btn {
+    display: none;
+}
+    .sh_banner_section .black_btn_mobile {
+        background: black;
+        border: unset;
+        width: 193px;
+        display: block;
+        color: white;
+        font-size: 16px;
+        height: 45px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 400;
+        transition: all 0.3s ease-in-out;
+        bottom: 39px;
+        position: absolute;
+    }
+    .banner_image_text {
+    position: relative;
+    height: unset !important;
+}
+.banner_image_text{
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+}
+.sh_bootom_bar p{
+  font-size: 16px;
+  font-weight: 400;
+   font-family: "Jost" !important;
+   line-height: 13.42px;
+   letter-spacing: 0px;
+   text-align: center;
+   text-transform: uppercase;
+   margin: unset;
+}
+.sh_bootom_bar {
+    background: #F5F5F5;
+    width: 100%;
+    height: 34px;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+}
+
+/* mobiles media query */
+
+
