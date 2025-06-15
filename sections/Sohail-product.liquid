@@ -135,7 +135,7 @@ p.sh_description {
     width: 5px;
     height: 40px;
     border: 1px solid black;
-    background: white;
+   
 }
 p.sh_color_text {
     font-size: 18px;
@@ -252,7 +252,7 @@ background-color: black;
                   {% if option.name == 'Color' %}
                     {% for value in option.values %}
                       <div class="each_color_varient" data-color="{{ value }}">
-                        <div class="sh_color"></div>
+                        <div class="sh_color" style="background-color: {{ value }};" ></div>
                         <p class="sh_color_text">{{ value }}</p>
                       </div>
                     {% endfor %}
