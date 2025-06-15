@@ -265,7 +265,7 @@ h1.sh_product_section_title {
 
 <section class="sh_product_section">
   <div class="page-width-desktop">
-    <h1 class="sh_product_section_title">Tisso vision in the wild</h1>
+    <h1 class="sh_product_section_title">{{ section.settings.product_section_title }}</h1>
     <div class="sh_all_product">
       {% for block in section.blocks %}
         {% assign product = all_products[block.settings.sh_product] %}
@@ -276,8 +276,20 @@ h1.sh_product_section_title {
      width="100%"
      height="444">
 
-          <img class="sh_plus_icon" src="https://cdn.shopify.com/s/files/1/0949/3331/9998/files/Group_1000008190.png?v=1749920143" width="22" height="22" data-product-id="{{ product.id }}">
-        </div>
+        
+<img 
+  class="sh_plus_icon"
+  src="https://cdn.shopify.com/s/files/1/0949/3331/9998/files/Group_1000008190.png?v=1749920143"
+  width="22"
+  height="22"
+  data-product-id="{{ product.id }}"
+  style="
+    position: absolute;
+    top: {% if is_mobile %}{{ block.settings.plus_icon_top_mobile }}{% else %}{{ block.settings.plus_icon_top_desktop }}{% endif %}%;
+    left: {% if is_mobile %}{{ block.settings.plus_icon_left_mobile }}{% else %}{{ block.settings.plus_icon_left_desktop }}{% endif %}%;
+  "
+>
+ </div>
 
         <!-- Product Popup -->
         <div class="sh_popup_main" id="popup-{{ product.id }}" data-product='{{ product | json | escape }}'>
@@ -422,13 +434,12 @@ h1.sh_product_section_title {
 {
   "name": "Popup Product Section",
   "settings": [
-  {
+    {
       "type": "text",
       "id": "product_section_title",
       "label": "Tisso vision in the wild",
       "default": "Tisso vision in the wild"
-    },
-
+    }
   ],
   "blocks": [
     {
@@ -439,6 +450,46 @@ h1.sh_product_section_title {
           "type": "product",
           "id": "sh_product",
           "label": "Select Product"
+        },
+        {
+          "type": "range",
+          "id": "plus_icon_top_desktop",
+          "label": "Plus Icon Top Position (Desktop)",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 10
+        },
+        {
+          "type": "range",
+          "id": "plus_icon_left_desktop",
+          "label": "Plus Icon Left Position (Desktop)",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 10
+        },
+        {
+          "type": "range",
+          "id": "plus_icon_top_mobile",
+          "label": "Plus Icon Top Position (Mobile)",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 5
+        },
+        {
+          "type": "range",
+          "id": "plus_icon_left_mobile",
+          "label": "Plus Icon Left Position (Mobile)",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "default": 5
         }
       ]
     }
@@ -452,5 +503,3 @@ h1.sh_product_section_title {
   ]
 }
 {% endschema %}
-
-
