@@ -302,7 +302,7 @@ button.yellow_btn {
   <button class="close_menu_btn">✕</button>
   {% if section.settings.sh_top_button_label != blank %}
           <a href="{{ section.settings.sh_top_button_link | default: '#' }}">
-            <button class="yellow_btn">
+            <button class="yellow_btn sh_menu_block">
               {{ section.settings.sh_top_button_label }}
             </button>
           </a>
@@ -313,7 +313,7 @@ button.yellow_btn {
         <p class="sh_gift">{{ section.settings.sh_top_text }}</p>
         {% if section.settings.sh_top_button_label != blank %}
           <a href="{{ section.settings.sh_top_button_link | default: '#' }}">
-            <button class="yellow_btn sh_menu_block">
+            <button class="yellow_btn ">
               {{ section.settings.sh_top_button_label }}
             </button>
           </a>
