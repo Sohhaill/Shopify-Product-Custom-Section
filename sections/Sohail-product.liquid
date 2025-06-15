@@ -5,12 +5,14 @@
     margin: auto;
 }
 
-.sh_all_product {
-    display: grid;
+.sh_all_product
+ {
+    display: grid
+;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    column-gap: 20px;
+    row-gap: 9px;
 }
-
 .sh_each_product {
     position: relative;
 }
@@ -27,6 +29,8 @@ h1.sh_product_section_title {
     font-weight: 400;
     line-height: 120%;
     margin-bottom: 30px;
+    margin-top: unset;
+    font-family: "Lustria", serif;
 }
 .sh_close img{
     cursor: pointer;;
@@ -230,7 +234,7 @@ background-color: black;
         <div class="sh_each_product" data-product-id="{{ product.id }}">
          <img class="sh_popup_image" 
      src="{{ product.featured_image | img_url: 'master' }}" 
-     width="433"
+     width="100%"
      height="444">
 
           <img class="sh_plus_icon" src="https://cdn.shopify.com/s/files/1/0949/3331/9998/files/Group_1000008190.png?v=1749920143" width="22" height="22" data-product-id="{{ product.id }}">
