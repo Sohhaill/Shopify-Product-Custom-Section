@@ -117,6 +117,40 @@ gap: 50px;
 }
 }
 @media(max-width:768px){
+   .sh_hamburger_menu {
+    display: block;
+    cursor: pointer;
+    z-index: 10000;
+    position: relative;
+  }
+
+     .sh_slide_menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -40vw;
+        width: 40vw;
+        height: 100vh;
+        background-color: #fff;
+        box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+        transition: left 0.3s ease-in-out;
+        z-index: 10000;
+        padding: 1rem;
+    }
+
+  .sh_slide_menu.active {
+    left: 0;
+  }
+
+  .close_menu_btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
   .sh_bootom_bar p {
     font-size: 12px !important;
    
@@ -130,6 +164,9 @@ gap: 50px;
 
 button.yellow_btn {
   display: none;
+}
+.yellow_btn .sh_menu_block{
+    display: block;
 }
    .banner_section .topbar {
         display: flex
@@ -245,43 +282,7 @@ button.yellow_btn {
   display: none;
 }
 
-/* Show hamburger and menu on mobile only */
-@media (max-width: 768px) {
-  .sh_hamburger_menu {
-    display: block;
-    cursor: pointer;
-    z-index: 10000;
-    position: relative;
-  }
 
-  .sh_slide_menu {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: -40vw;
-    width: 40vw;
-    height: 10vh;
-    background-color: #fff;
-    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
-    transition: left 0.3s ease-in-out;
-    z-index: 9999;
-    padding: 1rem;
-  }
-
-  .sh_slide_menu.active {
-    left: 0;
-  }
-
-  .close_menu_btn {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    background: transparent;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
-}
 </style>
 
 
@@ -299,7 +300,7 @@ button.yellow_btn {
   <button class="close_menu_btn">✕</button>
   {% if section.settings.sh_top_button_label != blank %}
           <a href="{{ section.settings.sh_top_button_link | default: '#' }}">
-            <button class="yellow_btn">
+            <button class="yellow_btn sh_menu_block">
               {{ section.settings.sh_top_button_label }}
             </button>
           </a>
