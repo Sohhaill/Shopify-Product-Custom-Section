@@ -70,49 +70,65 @@
         "product_block_eTQCrA": {
           "type": "product_block",
           "settings": {
-            "sh_product": "black-leather-bag"
+            "sh_product": "black-leather-bag",
+            "plus_icon_top": 55,
+            "plus_icon_left": 10
           }
         },
         "product_block_gJEL8E": {
           "type": "product_block",
           "settings": {
-            "sh_product": "blue-silk-tuxedo"
+            "sh_product": "blue-silk-tuxedo",
+            "plus_icon_top": 10,
+            "plus_icon_left": 10
           }
         },
         "product_block_beGMk4": {
           "type": "product_block",
           "settings": {
-            "sh_product": "chequered-red-shirt"
+            "sh_product": "chequered-red-shirt",
+            "plus_icon_top": 10,
+            "plus_icon_left": 10
           }
         },
         "product_block_DTnmCM": {
           "type": "product_block",
           "settings": {
-            "sh_product": "classic-leather-jacket"
+            "sh_product": "classic-leather-jacket",
+            "plus_icon_top": 10,
+            "plus_icon_left": 10
           }
         },
         "product_block_X34NVy": {
           "type": "product_block",
           "settings": {
-            "sh_product": "classic-varsity-top"
+            "sh_product": "classic-varsity-top",
+            "plus_icon_top": 10,
+            "plus_icon_left": 10
           }
         },
         "product_block_wxwbPH": {
           "type": "product_block",
           "settings": {
-            "sh_product": "dark-denim-top"
+            "sh_product": "dark-denim-top",
+            "plus_icon_top": 10,
+            "plus_icon_left": 10
           }
         },
         "product_block_qXiDAJ": {
           "type": "product_block",
           "settings": {
-            "sh_product": "floral-white-top"
+            "sh_product": "floral-white-top",
+            "plus_icon_top": 10,
+            "plus_icon_left": 10
           }
         },
         "product_block_LgJq39": {
           "type": "product_block",
           "settings": {
-            "sh_product": "led-high-tops"
+            "sh_product": "led-high-tops",
+            "plus_icon_top": 10,
+            "plus_icon_left": 10
           }
         }
       },
