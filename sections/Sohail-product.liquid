@@ -276,22 +276,19 @@ h1.sh_product_section_title {
      width="100%"
      height="444">
 
-        
+        {% assign is_mobile = request.user_agent contains 'iPhone' or request.user_agent contains 'Android' %}
 <img 
   class="sh_plus_icon"
   src="https://cdn.shopify.com/s/files/1/0949/3331/9998/files/Group_1000008190.png?v=1749920143"
   width="22"
   height="22"
   data-product-id="{{ product.id }}"
-  data-top-mobile="{{ block.settings.plus_icon_top_mobile }}"
-  data-left-mobile="{{ block.settings.plus_icon_left_mobile }}"
   style="
     position: absolute;
-    top: {{ block.settings.plus_icon_top_desktop }}%;
-    left: {{ block.settings.plus_icon_left_desktop }}%;
+    top: {% if is_mobile %}{{ block.settings.plus_icon_top_mobile }}{% else %}{{ block.settings.plus_icon_top_desktop }}{% endif %}%;
+    left: {% if is_mobile %}{{ block.settings.plus_icon_left_mobile }}{% else %}{{ block.settings.plus_icon_left_desktop }}{% endif %}%;
   "
 >
-
  </div>
 
         <!-- Product Popup -->
@@ -425,17 +422,6 @@ h1.sh_product_section_title {
       } else {
         variantInput.value = '';
       }
-    }
-  });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    if (window.innerWidth <= 767) {
-      document.querySelectorAll('.sh_plus_icon').forEach(function (icon) {
-        const top = icon.getAttribute('data-top-mobile');
-        const left = icon.getAttribute('data-left-mobile');
-        icon.style.top = top + '%';
-        icon.style.left = left + '%';
-      });
     }
   });
 </script>
