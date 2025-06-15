@@ -204,6 +204,7 @@ background-color: black;
 .varient_size {
     position: relative;
 }
+
 </style>
 
 
@@ -249,7 +250,7 @@ background-color: black;
               <div class="sh_product_title">
                 <p class="sh_title">{{ product.title }}</p>
                 <p class="sh_price">{{ product.price | money }}</p>
-                <p class="sh_description">{{ product.description}}</p>
+                <p class="sh_description">{{ product.description | strip_html | truncatewords: 20 }}</p>
               </div>
             </div>
 
