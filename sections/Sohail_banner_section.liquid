@@ -219,6 +219,23 @@ button.yellow_btn {
     justify-content: center;
     padding: 0px 10px;
 }
+.sh_slide_menu {
+  position: fixed;
+  top: 0;
+  left: -40%;
+  width: 40vw;
+  height: 10vh;
+  background-color: #fff;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+  transition: left 0.3s ease-in-out;
+  z-index: 9999;
+  padding: 1rem;
+}
+
+/* Show the menu when active */
+.sh_slide_menu.active {
+  left: 0;
+}
 
 /* mobiles media query */
 </style>
@@ -234,7 +251,14 @@ button.yellow_btn {
             <div class="sh_hamburger_menu">
                 <img src="https://cdn.shopify.com/s/files/1/0949/3331/9998/files/Group_1000008115.png?v=1749901886" width="18" height="10" >
             </div>
-            
+            <div class="sh_slide_menu">
+  <!-- Add your menu content here -->
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Shop</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</div>
 
           
         <h1 class="sh_logo">{{ section.settings.sh_logo_text }}</h1>
@@ -284,6 +308,16 @@ button.yellow_btn {
     <p>{{ section.settings.bottombar_sh }}</p>
   </div>
 </section>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuBtn = document.querySelector(".sh_hamburger_menu");
+    const slideMenu = document.querySelector(".sh_slide_menu");
+
+    menuBtn.addEventListener("click", function () {
+      slideMenu.classList.toggle("active");
+    });
+  });
+</script>
 
 {% schema %}
 {
