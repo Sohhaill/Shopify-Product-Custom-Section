@@ -61,7 +61,8 @@
         "sh_overlay_heading": "The Gift Guide",
         "sh_overlay_text": "Discover Joy: Your Ultimate Holiday Gift Destination. Explore our curated selection and find the perfect gifts to delight your loved ones this holiday season.",
         "sh_overlay_button_label": "SHOP NOW →",
-        "sh_overlay_button_link": ""
+        "sh_overlay_button_link": "",
+        "bottombar_sh": "SUSTAINABLE, ETHICALLY MADE CLOTHES IN SIZES XXS TO 6XL"
       }
     },
     "sohail_product_TnXtf4": {
@@ -130,6 +131,46 @@
             "plus_icon_top": 10,
             "plus_icon_left": 10
           }
+        },
+        "product_block_U3xNT9": {
+          "type": "product_block",
+          "settings": {
+            "sh_product": "longsleeve-cotton-top",
+            "plus_icon_top": 10,
+            "plus_icon_left": 10
+          }
+        },
+        "product_block_nFmHM4": {
+          "type": "product_block",
+          "settings": {
+            "sh_product": "navy-sport-jacket",
+            "plus_icon_top": 10,
+            "plus_icon_left": 10
+          }
+        },
+        "product_block_9CPXCT": {
+          "type": "product_block",
+          "settings": {
+            "sh_product": "ocean-blue-shirt",
+            "plus_icon_top": 10,
+            "plus_icon_left": 10
+          }
+        },
+        "product_block_jzYhTU": {
+          "type": "product_block",
+          "settings": {
+            "sh_product": "olive-green-jacket",
+            "plus_icon_top": 55,
+            "plus_icon_left": 10
+          }
+        },
+        "product_block_UFPAid": {
+          "type": "product_block",
+          "settings": {
+            "sh_product": "white-cotton-shirt",
+            "plus_icon_top": 55,
+            "plus_icon_left": 55
+          }
         }
       },
       "block_order": [
@@ -140,7 +181,12 @@
         "product_block_X34NVy",
         "product_block_wxwbPH",
         "product_block_qXiDAJ",
-        "product_block_LgJq39"
+        "product_block_LgJq39",
+        "product_block_U3xNT9",
+        "product_block_nFmHM4",
+        "product_block_9CPXCT",
+        "product_block_jzYhTU",
+        "product_block_UFPAid"
       ],
       "name": "Hiring Product Section",
       "settings": {
