@@ -285,8 +285,8 @@ h1.sh_product_section_title {
   data-product-id="{{ product.id }}"
   style="
     position: absolute;
-    top: {% if is_mobile %}{{ block.settings.plus_icon_top_mobile }}{% else %}{{ block.settings.plus_icon_top_desktop }}{% endif %}%;
-    left: {% if is_mobile %}{{ block.settings.plus_icon_left_mobile }}{% else %}{{ block.settings.plus_icon_left_desktop }}{% endif %}%;
+    top:{{ block.settings.plus_icon_top_desktop }}%;
+    left:{{ block.settings.plus_icon_left_desktop }}%;
   "
 >
  </div>
@@ -453,8 +453,8 @@ h1.sh_product_section_title {
         },
         {
           "type": "range",
-          "id": "plus_icon_top_desktop",
-          "label": "Plus Icon Top Position (Desktop)",
+          "id": "plus_icon_top",
+          "label": "Plus Icon Top Position",
           "min": 0,
           "max": 100,
           "step": 1,
@@ -463,34 +463,15 @@ h1.sh_product_section_title {
         },
         {
           "type": "range",
-          "id": "plus_icon_left_desktop",
-          "label": "Plus Icon Left Position (Desktop)",
+          "id": "plus_icon_left",
+          "label": "Plus Icon Left Position",
           "min": 0,
           "max": 100,
           "step": 1,
           "unit": "%",
           "default": 10
         },
-        {
-          "type": "range",
-          "id": "plus_icon_top_mobile",
-          "label": "Plus Icon Top Position (Mobile)",
-          "min": 0,
-          "max": 100,
-          "step": 1,
-          "unit": "%",
-          "default": 5
-        },
-        {
-          "type": "range",
-          "id": "plus_icon_left_mobile",
-          "label": "Plus Icon Left Position (Mobile)",
-          "min": 0,
-          "max": 100,
-          "step": 1,
-          "unit": "%",
-          "default": 5
-        }
+       
       ]
     }
   ],
