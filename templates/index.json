@@ -66,8 +66,28 @@
     },
     "sohail_product_TnXtf4": {
       "type": "Sohail-product",
+      "blocks": {
+        "product_block_eTQCrA": {
+          "type": "product_block",
+          "settings": {
+            "sh_product": "black-leather-bag"
+          }
+        },
+        "product_block_gJEL8E": {
+          "type": "product_block",
+          "settings": {
+            "sh_product": "blue-silk-tuxedo"
+          }
+        }
+      },
+      "block_order": [
+        "product_block_eTQCrA",
+        "product_block_gJEL8E"
+      ],
       "name": "Hiring Product Section",
-      "settings": {}
+      "settings": {
+        "product_section_title": "Tisso vision in the wild"
+      }
     }
   },
   "order": [
