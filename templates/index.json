@@ -78,11 +78,53 @@
           "settings": {
             "sh_product": "blue-silk-tuxedo"
           }
+        },
+        "product_block_beGMk4": {
+          "type": "product_block",
+          "settings": {
+            "sh_product": "chequered-red-shirt"
+          }
+        },
+        "product_block_DTnmCM": {
+          "type": "product_block",
+          "settings": {
+            "sh_product": "classic-leather-jacket"
+          }
+        },
+        "product_block_X34NVy": {
+          "type": "product_block",
+          "settings": {
+            "sh_product": "classic-varsity-top"
+          }
+        },
+        "product_block_wxwbPH": {
+          "type": "product_block",
+          "settings": {
+            "sh_product": "dark-denim-top"
+          }
+        },
+        "product_block_qXiDAJ": {
+          "type": "product_block",
+          "settings": {
+            "sh_product": "floral-white-top"
+          }
+        },
+        "product_block_LgJq39": {
+          "type": "product_block",
+          "settings": {
+            "sh_product": "led-high-tops"
+          }
         }
       },
       "block_order": [
         "product_block_eTQCrA",
-        "product_block_gJEL8E"
+        "product_block_gJEL8E",
+        "product_block_beGMk4",
+        "product_block_DTnmCM",
+        "product_block_X34NVy",
+        "product_block_wxwbPH",
+        "product_block_qXiDAJ",
+        "product_block_LgJq39"
       ],
       "name": "Hiring Product Section",
       "settings": {
